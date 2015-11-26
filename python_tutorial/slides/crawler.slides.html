@@ -2858,7 +2858,7 @@ Disallow: /
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
+<div class="prompt input_prompt">In&nbsp;[251]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">s</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">session</span><span class="p">()</span>
@@ -2868,7 +2868,7 @@ Disallow: /
 <span class="p">}</span>
 <span class="n">s</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s">&quot;https://www.ptt.cc/ask/over18&quot;</span><span class="p">,</span><span class="n">verify</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">cookie</span><span class="p">)</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&quot;https://www.ptt.cc/bbs/Gossiping/index.html&quot;</span><span class="p">,</span><span class="n">verify</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
-<span class="n">HTML</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">result</span><span class="o">.</span><span class="n">text</span>
 </pre></div>
 
 </div>
@@ -2879,455 +2879,526 @@ Disallow: /
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[241]:</div>
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot; /&gt;
 		
 
-<meta name="viewport" content="width=device-width">
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
 
-<title>看板 Gossiping 文章列表 - 批踢踢實業坊</title>
+&lt;title&gt;看板 Gossiping 文章列表 - 批踢踢實業坊&lt;/title&gt;
 
-<link rel="stylesheet" type="text/css" href="//images.ptt.cc/v2.13/bbs-common.css" />
-<link rel="stylesheet" type="text/css" href="//images.ptt.cc/v2.13/bbs.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="//images.ptt.cc/v2.13/pushstream.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="//images.ptt.cc/v2.13/bbs-print.css" media="print" />
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//images.ptt.cc/v2.13/bbs-common.css&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//images.ptt.cc/v2.13/bbs.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//images.ptt.cc/v2.13/pushstream.css&quot; media=&quot;screen&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//images.ptt.cc/v2.13/bbs-print.css&quot; media=&quot;print&quot; /&gt;
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="//images.ptt.cc/v2.13/bbs.js"></script>
+&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//images.ptt.cc/v2.13/bbs.js&quot;&gt;&lt;/script&gt;
 
 
 		
 
-<script type="text/javascript">
+&lt;script type=&quot;text/javascript&quot;&gt;
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32365737-1']);
-  _gaq.push(['_setDomainName', 'ptt.cc']);
-  _gaq.push(['_trackPageview']);
+  _gaq.push([&apos;_setAccount&apos;, &apos;UA-32365737-1&apos;]);
+  _gaq.push([&apos;_setDomainName&apos;, &apos;ptt.cc&apos;]);
+  _gaq.push([&apos;_trackPageview&apos;]);
 
   (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    var ga = document.createElement(&apos;script&apos;); ga.type = &apos;text/javascript&apos;; ga.async = true;
+    ga.src = (&apos;https:&apos; == document.location.protocol ? &apos;https://ssl&apos; : &apos;http://www&apos;) + &apos;.google-analytics.com/ga.js&apos;;
+    var s = document.getElementsByTagName(&apos;script&apos;)[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+&lt;/script&gt;
 
 
-	</head>
-    <body>
+	&lt;/head&gt;
+    &lt;body&gt;
 		
-<div id="topbar-container">
-	<div id="topbar" class="bbs-content">
-		<a id="logo" href="/">批踢踢實業坊</a>
-		<span>&rsaquo;</span>
-		<a class="board" href="/bbs/Gossiping/index.html"><span class="board-label">看板 </span>Gossiping</a>
-		<a class="right small" href="/about.html">關於我們</a>
-		<a class="right small" href="/contact.html">聯絡資訊</a>
-	</div>
-</div>
+&lt;div id=&quot;topbar-container&quot;&gt;
+	&lt;div id=&quot;topbar&quot; class=&quot;bbs-content&quot;&gt;
+		&lt;a id=&quot;logo&quot; href=&quot;/&quot;&gt;批踢踢實業坊&lt;/a&gt;
+		&lt;span&gt;&amp;rsaquo;&lt;/span&gt;
+		&lt;a class=&quot;board&quot; href=&quot;/bbs/Gossiping/index.html&quot;&gt;&lt;span class=&quot;board-label&quot;&gt;看板 &lt;/span&gt;Gossiping&lt;/a&gt;
+		&lt;a class=&quot;right small&quot; href=&quot;/about.html&quot;&gt;關於我們&lt;/a&gt;
+		&lt;a class=&quot;right small&quot; href=&quot;/contact.html&quot;&gt;聯絡資訊&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 
-<div id="main-container">
-	<div id="action-bar-container">
-		<div class="action-bar">
-			<div class="btn-group">
-				<a class="btn selected" href="/bbs/Gossiping/index.html">看板</a>
-				<a class="btn" href="/man/Gossiping/index.html">精華區</a>
-			</div>
-			<div class="btn-group pull-right">
-				<a class="btn wide" href="/bbs/Gossiping/index1.html">最舊</a>
-				<a class="btn wide" href="/bbs/Gossiping/index10328.html">&lsaquo; 上頁</a>
-				<a class="btn wide disabled">下頁 &rsaquo;</a>
-				<a class="btn wide" href="/bbs/Gossiping/index.html">最新</a>
-			</div>
-		</div>
-	</div>
+&lt;div id=&quot;main-container&quot;&gt;
+	&lt;div id=&quot;action-bar-container&quot;&gt;
+		&lt;div class=&quot;action-bar&quot;&gt;
+			&lt;div class=&quot;btn-group&quot;&gt;
+				&lt;a class=&quot;btn selected&quot; href=&quot;/bbs/Gossiping/index.html&quot;&gt;看板&lt;/a&gt;
+				&lt;a class=&quot;btn&quot; href=&quot;/man/Gossiping/index.html&quot;&gt;精華區&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;btn-group pull-right&quot;&gt;
+				&lt;a class=&quot;btn wide&quot; href=&quot;/bbs/Gossiping/index1.html&quot;&gt;最舊&lt;/a&gt;
+				&lt;a class=&quot;btn wide&quot; href=&quot;/bbs/Gossiping/index10328.html&quot;&gt;&amp;lsaquo; 上頁&lt;/a&gt;
+				&lt;a class=&quot;btn wide disabled&quot;&gt;下頁 &amp;rsaquo;&lt;/a&gt;
+				&lt;a class=&quot;btn wide&quot; href=&quot;/bbs/Gossiping/index.html&quot;&gt;最新&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 
-	<div class="r-list-container bbs-screen">
+	&lt;div class=&quot;r-list-container bbs-screen&quot;&gt;
 		
-		
-            
-        
-        
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">6</span></div>
-			<div class="mark"></div>
-			<div class="title">
-			
-				<a href="/bbs/Gossiping/M.1448561847.A.144.html">[問卦] 有沒有兩個月亮會怎樣的八卦</a>
-			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">Zawar379</div>
-			</div>
-		</div>
-
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;6&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562071.A.29F.html">[新聞] 土總統：若知是俄機 可能不會擊落</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448561847.A.144.html&quot;&gt;[問卦] 有沒有兩個月亮會怎樣的八卦&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">GuoJia</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;Zawar379&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">6</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562247.A.7CF.html">[問卦] 有沒有愛上不可能有結果的人的八卦</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562071.A.29F.html&quot;&gt;[新聞] 土總統：若知是俄機 可能不會擊落&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">funnypeter</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;GuoJia&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;6&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
+			
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562247.A.7CF.html&quot;&gt;[問卦] 有沒有愛上不可能有結果的人的八卦&lt;/a&gt;
+			
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;funnypeter&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		
+            
+        
+        
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
 				(本文已被刪除) [lturtsamuel]
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">-</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;-&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">2</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;2&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562464.A.E1D.html">Re: [新聞] 中國學者驚語：校園是gay產生的「重災區</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562464.A.E1D.html&quot;&gt;Re: [新聞] 中國學者驚語：校園是gay產生的「重災區&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">velvetavt</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;velvetavt&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">6</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;7&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562474.A.C4E.html">Re: [問卦] 眷村子弟會覺醒嗎？</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562474.A.C4E.html&quot;&gt;Re: [問卦] 眷村子弟會覺醒嗎？&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">tommy1014</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;tommy1014&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">4</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;4&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562512.A.60D.html">Re: [問卦] 認真思考自己死亡這件事情</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562512.A.60D.html&quot;&gt;Re: [問卦] 認真思考自己死亡這件事情&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">s3602te</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;s3602te&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">7</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;7&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562571.A.F8C.html">[問卦] 半夜就能把車開上高鐵站行人區拍照?</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562571.A.F8C.html&quot;&gt;[問卦] 半夜就能把車開上高鐵站行人區拍照?&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">FECer</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;FECer&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562831.A.128.html">Re: [問卦] 哀鳳的sim卡大小</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562831.A.128.html&quot;&gt;Re: [問卦] 哀鳳的sim卡大小&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">stan1231</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;stan1231&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f3">12</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f3&quot;&gt;15&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448562833.A.48C.html">[問卦] 台灣服務業是否太好過頭??</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448562833.A.48C.html&quot;&gt;[問卦] 台灣服務業是否太好過頭??&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">hk416</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;hk416&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448563206.A.805.html">Re: [問卦] 台灣收入，美國等級消費，這是甚麼道理呢</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448563206.A.805.html&quot;&gt;Re: [問卦] 台灣收入，美國等級消費，這是甚麼道理呢&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">fluterway</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;fluterway&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">2</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;5&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448563301.A.75E.html">Re: [新聞] 邱顯智籲柯建銘效法柯P 打場理念之戰</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448563301.A.75E.html&quot;&gt;Re: [新聞] 邱顯智籲柯建銘效法柯P 打場理念之戰&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">acont</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;acont&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;1&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448563424.A.483.html">Re: [問卦] 台外資撤離中國，中共如何應對失業增加?</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448563424.A.483.html&quot;&gt;Re: [問卦] 台外資撤離中國，中共如何應對失業增加?&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">takase</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;takase&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448563642.A.78E.html">Re: [問卦] 關於陸生健保的幾件事</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448563642.A.78E.html&quot;&gt;Re: [問卦] 關於陸生健保的幾件事&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">atorneychien</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;atorneychien&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
             
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448563895.A.FA9.html">[問卦] 滿漢大餐VS一度贊誰才是牛肉麵一哥?</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448563895.A.FA9.html&quot;&gt;[問卦] 滿漢大餐VS一度贊誰才是牛肉麵一哥?&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/27</div>
-				<div class="author">SpadeR</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;SpadeR&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		
+            
+        
+        
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f3&quot;&gt;12&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
+			
+				&lt;a href=&quot;/bbs/Gossiping/M.1448564327.A.4CF.html&quot;&gt;[問卦] 有沒有在醫院照顧家人要做什麼的八卦?&lt;/a&gt;
+			
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;Jetrel&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		
+            
+        
+        
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
+			
+				&lt;a href=&quot;/bbs/Gossiping/M.1448564526.A.906.html&quot;&gt;[新聞] 德國「參戰」　偵察機、護衛艦助法攻IS&lt;/a&gt;
+			
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;coon182&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		
+            
+        
+        
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
+			
+				&lt;a href=&quot;/bbs/Gossiping/M.1448564642.A.273.html&quot;&gt;Re: [問卦] 關於陸生健保的幾件事&lt;/a&gt;
+			
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;nickyang&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		
+            
+        
+        
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
+			
+				&lt;a href=&quot;/bbs/Gossiping/M.1448564664.A.8CE.html&quot;&gt;[問卦] 上班用鞋款中的霸主是?&lt;/a&gt;
+			
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/27&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;qsef5&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
 		
         
-        <div class="r-list-sep"></div>
+        &lt;div class=&quot;r-list-sep&quot;&gt;&lt;/div&gt;
             
                 
         
         
-		<div class="r-ent">
-			<div class="nrec"></div>
-			<div class="mark">!</div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;!&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1434384024.A.711.html">[公告] 八卦板板規(2015.06.16)</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1434384024.A.711.html&quot;&gt;[公告] 八卦板板規(2015.06.16)&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date"> 6/16</div>
-				<div class="author">seabox</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt; 6/16&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;seabox&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
             
                 
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f2">9</span></div>
-			<div class="mark">M</div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f2&quot;&gt;9&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;M&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448284729.A.C8A.html">[公告] 數條板規修改草案於GossipPicket討論</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448284729.A.C8A.html&quot;&gt;[公告] 數條板規修改草案於GossipPicket討論&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/23</div>
-				<div class="author">seabox</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/23&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;seabox&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
             
                 
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f3">12</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f3&quot;&gt;12&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448357008.A.298.html">[徵求] 死亡車禍 徵求行車紀錄器影像-科學園區</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448357008.A.298.html&quot;&gt;[徵求] 死亡車禍 徵求行車紀錄器影像-科學園區&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/24</div>
-				<div class="author">fifteengrain</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/24&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;fifteengrain&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
             
                 
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f3">13</span></div>
-			<div class="mark"></div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f3&quot;&gt;13&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1448385769.A.235.html">[協尋] 11/24 早上九點 國一南崁交流道死亡車禍</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1448385769.A.235.html&quot;&gt;[協尋] 11/24 早上九點 國一南崁交流道死亡車禍&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">11/25</div>
-				<div class="author">LinIsGod</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;11/25&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;LinIsGod&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
             
                 
         
         
-		<div class="r-ent">
-			<div class="nrec"><span class="hl f3">15</span></div>
-			<div class="mark">M</div>
-			<div class="title">
+		&lt;div class=&quot;r-ent&quot;&gt;
+			&lt;div class=&quot;nrec&quot;&gt;&lt;span class=&quot;hl f3&quot;&gt;15&lt;/span&gt;&lt;/div&gt;
+			&lt;div class=&quot;mark&quot;&gt;M&lt;/div&gt;
+			&lt;div class=&quot;title&quot;&gt;
 			
-				<a href="/bbs/Gossiping/M.1446296399.A.9E6.html">[公告] 十一月份置底閒聊區</a>
+				&lt;a href=&quot;/bbs/Gossiping/M.1446296399.A.9E6.html&quot;&gt;[公告] 十一月份置底閒聊區&lt;/a&gt;
 			
-			</div>
-			<div class="meta">
-				<div class="date">10/31</div>
-				<div class="author">meowmeowgo</div>
-			</div>
-		</div>
+			&lt;/div&gt;
+			&lt;div class=&quot;meta&quot;&gt;
+				&lt;div class=&quot;date&quot;&gt;10/31&lt;/div&gt;
+				&lt;div class=&quot;author&quot;&gt;meowmeowgo&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 
             
         
-	</div>
+	&lt;/div&gt;
 
     
-<div class="bbs-screen bbs-footer-message">本網站已依台灣網站內容分級規定處理。此區域為限制級，未滿十八歲者不得瀏覽。</div>
+&lt;div class=&quot;bbs-screen bbs-footer-message&quot;&gt;本網站已依台灣網站內容分級規定處理。此區域為限制級，未滿十八歲者不得瀏覽。&lt;/div&gt;
 
+&lt;/div&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
 </div>
-
-    </body>
-</html>
-
-</div>
-
 </div>
 
 </div>
