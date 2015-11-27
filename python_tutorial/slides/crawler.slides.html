@@ -785,6 +785,262 @@ post傳遞的參數不會顯示在?後面 <br>
 </div>
 </div>
 </div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[282]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a_html</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;</span>
+<span class="s">&lt;html&gt;</span>
+<span class="s">    &lt;head&gt;&lt;/head&gt;</span>
+<span class="s">    &lt;body&gt;</span>
+<span class="s">    &lt;table&gt;</span>
+<span class="s">        &lt;tr&gt;&lt;td&gt;Jim&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="s">        &lt;tr&gt;&lt;td&gt;Kevin&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="s">        &lt;tr&gt;&lt;td&gt;Jeff&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;</span>
+<span class="s">    &lt;/table&gt;</span>
+<span class="s">    &lt;/body&gt;</span>
+<span class="s">&lt;/html&gt;&quot;&quot;&quot;</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="n">a_html</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[282]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<html>
+    <head></head>
+    <body>
+    <table>
+        <tr><td>Jim</td><td>1</td></tr>
+        <tr><td>Kevin</td><td>2</td></tr>
+        <tr><td>Jeff</td><td>3</td></tr>
+    </table>
+    </body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#24590;&#40636;&#25226;table&#35041;&#30340;&#36039;&#26009;&#25847;&#21462;&#20986;&#20358;&#35722;&#25104;-[(Jim,1),(Kevin,2),(Jeff,3)]-?">&#24590;&#40636;&#25226;table&#35041;&#30340;&#36039;&#26009;&#25847;&#21462;&#20986;&#20358;&#35722;&#25104; [(Jim,1),(Kevin,2),(Jeff,3)] ?<a class="anchor-link" href="#&#24590;&#40636;&#25226;table&#35041;&#30340;&#36039;&#26009;&#25847;&#21462;&#20986;&#20358;&#35722;&#25104;-[(Jim,1),(Kevin,2),(Jeff,3)]-?">&#182;</a></h1>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[283]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">bsoup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">a_html</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">bsoup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;td&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&lt;td&gt;Jim&lt;/td&gt;, &lt;td&gt;1&lt;/td&gt;, &lt;td&gt;Kevin&lt;/td&gt;, &lt;td&gt;2&lt;/td&gt;, &lt;td&gt;Jeff&lt;/td&gt;, &lt;td&gt;3&lt;/td&gt;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[284]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">result</span> <span class="o">=</span> <span class="p">[</span> <span class="n">result</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span> <span class="k">for</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">bsoup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;td&quot;</span><span class="p">)</span> <span class="p">]</span>
+<span class="k">print</span> <span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[u&apos;Jim&apos;, u&apos;1&apos;, u&apos;Kevin&apos;, u&apos;2&apos;, u&apos;Jeff&apos;, u&apos;3&apos;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[285]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">result</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span> <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">],(</span><span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span> <span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span> <span class="p">]</span>
+<span class="k">print</span> <span class="n">result</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[(u&apos;Jim&apos;, u&apos;1&apos;), (u&apos;Kevin&apos;, u&apos;2&apos;), (u&apos;Jeff&apos;, u&apos;3&apos;)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[286]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a_html</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;</span>
+<span class="s">&lt;html&gt;</span>
+<span class="s">    &lt;head&gt;&lt;/head&gt;</span>
+<span class="s">    &lt;body&gt;</span>
+<span class="s">        &lt;a href=&quot;https://www.ptt.cc/bbs/Gossiping/index1.html&quot;&gt;PTT&lt;/a&gt;&lt;br&gt;</span>
+<span class="s">        &lt;a href=&quot;https://github.com/Jchou24/python_tutorial&quot;&gt;JC&lt;/a&gt;&lt;br&gt;</span>
+<span class="s">        &lt;a href=&quot;http://allrecipes.com/recipes/79/desserts/?&quot;&gt;desserts&lt;/a&gt;&lt;br&gt;</span>
+<span class="s">    &lt;/body&gt;</span>
+<span class="s">&lt;/html&gt;&quot;&quot;&quot;</span>
+<span class="n">HTML</span><span class="p">(</span><span class="n">a_html</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[286]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<html>
+    <head></head>
+    <body>
+        <a href="https://www.ptt.cc/bbs/Gossiping/index1.html">PTT</a><br>
+        <a href="https://github.com/Jchou24/python_tutorial">JC</a><br>
+        <a href="http://allrecipes.com/recipes/79/desserts/?">desserts</a><br>
+    </body>
+</html>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#35531;&#21839;&#24590;&#40636;&#23559;&#25152;&#26377;&#30340;&#32178;&#22336;&#25214;&#20986;&#20358;&#65311;">&#35531;&#21839;&#24590;&#40636;&#23559;&#25152;&#26377;&#30340;&#32178;&#22336;&#25214;&#20986;&#20358;&#65311;<a class="anchor-link" href="#&#35531;&#21839;&#24590;&#40636;&#23559;&#25152;&#26377;&#30340;&#32178;&#22336;&#25214;&#20986;&#20358;&#65311;">&#182;</a></h1>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[277]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a_soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">a_html</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span> <span class="n">a_soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&lt;a href=&quot;https://www.ptt.cc/bbs/Gossiping/index1.html&quot;&gt;PTT&lt;/a&gt;,
+ &lt;a href=&quot;https://github.com/Jchou24/python_tutorial&quot;&gt;JC&lt;/a&gt;,
+ &lt;a href=&quot;http://allrecipes.com/recipes/79/desserts/?&quot;&gt;desserts&lt;/a&gt;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[279]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">pprint</span><span class="p">([</span> <span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">&#39;href&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">a_soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span> <span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&apos;https://www.ptt.cc/bbs/Gossiping/index1.html&apos;,
+ &apos;https://github.com/Jchou24/python_tutorial&apos;,
+ &apos;http://allrecipes.com/recipes/79/desserts/?&apos;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
