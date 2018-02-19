@@ -1,0 +1,29 @@
+---
+layout: post
+permalink: /archive/
+title: "Posts by DateTime"
+---
+
+<table>
+  {% for post in site.posts %}
+    {% assign page = post %}
+    {% unless post.next %}
+      <td></td>
+      <td class="text-right">{{ post.date | date: '%Y' }}</td>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+        <td></td>
+        <td class="text-right">{{ post.date | date: '%Y' }}</td>
+      {% endif %}
+    {% endunless %}
+
+    <tr>    
+        <td class="text-right" style="border-bottom:0px">{{ post.date | date:"%Y/%m/%d" }}</td>
+        <td class="archive-post-title" style="border-bottom:0px">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </td>
+    </tr>
+  {% endfor %}
+</table>
