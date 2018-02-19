@@ -36,4 +36,3 @@ var store = [
       }{%- unless forloop.last and l -%},{%- endunless -%}
     {%- endfor -%}
   {%- endfor -%}]
-console.log(store)
