@@ -25,6 +25,8 @@ var store = [
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
         "url": {{ doc.url | absolute_url | jsonify }},
+        "create_date": {{ doc.date | jsonify }},
+        "update_date": {{ doc.last_modified_at | jsonify }},
         "teaser":
           {%- if teaser contains "://" -%}
             {{ teaser | jsonify }}
@@ -34,3 +36,4 @@ var store = [
       }{%- unless forloop.last and l -%},{%- endunless -%}
     {%- endfor -%}
   {%- endfor -%}]
+console.log(store)
