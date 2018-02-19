@@ -211,7 +211,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-admin
 
 # Archives
 #  Type
