@@ -57,5 +57,11 @@
   {% endif %}
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  {% else %}
+    <span class="page__hero-caption">
+      {% if page.date %}
+        <p class="page__date"><strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></strong></p>
+      {% endif %}
+    </span>
   {% endif %}
 </div>
