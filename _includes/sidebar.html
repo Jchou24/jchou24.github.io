@@ -18,6 +18,17 @@
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
+    {% if page.toc %}
+      {% assign nodes_count = page.content | split: '<h' %}
+      {% if nodes_count.size > 1 %}
+        <aside class="sidebar__left">
+          <nav class="toc">
+            <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+            {% include toc.html sanitize=true html=content h_min=2 h_max=3 class="toc__menu" %}
+          </nav>
+        </aside>
+      {% endif %}
+    {% endif %}
   {% endif %}
   </div>
 {% endif %}
