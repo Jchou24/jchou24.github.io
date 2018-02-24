@@ -364,7 +364,7 @@ zh-TW: &DEFAULT_ZH_HANT
   breadcrumb_home_label      : "首頁"
   breadcrumb_separator       : "/"
   menu_label                 : "切換選單"
-  toc_label                  : "本頁"
+  toc_label                  : "Outline"
   ext_link_label             : "外部連結"
   less_than                  : "少於"
   minute_read                : "分鐘閱讀"
