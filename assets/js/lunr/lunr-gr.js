@@ -531,7 +531,7 @@ $(document).ready(function() {
               'Created: '+
           '</strong>'+
           '<time datetime="' + store[ref].create_date + '">'+
-            new Date(store[ref].create_date).toDateString()+
+            store[ref].create_date+
           '</time>';
       }
 

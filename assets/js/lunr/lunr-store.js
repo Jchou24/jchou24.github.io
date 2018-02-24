@@ -25,8 +25,8 @@ var store = [
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
         "url": {{ doc.url | absolute_url | jsonify }},
-        "create_date": {{ doc.date | jsonify }},
-        "update_date": {{ doc.last_modified_at | jsonify }},
+        "create_date": {{ doc.date | date: "%B %d, %Y" | jsonify }},    
+        "update_date": {{ doc.last_modified_at | date: "%B %d, %Y" | jsonify }},
         "teaser":
           {%- if teaser contains "://" -%}
             {{ teaser | jsonify }}
