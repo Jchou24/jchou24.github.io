@@ -104,6 +104,9 @@ $(document).ready(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
+  // ====================================================================================================
+  // handle back to top button
+  // ====================================================================================================
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
@@ -117,4 +120,23 @@ $(document).ready(function() {
   $("#backToTop").on("click", function() {
     $('html, body').animate({ scrollTop: 0 }, 'fast');
   });
+  // ====================================================================================================
+  // handle Katex
+  // ====================================================================================================
+  $("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return "<div class=\"equation\">" + 
+             katex.renderToString("\\displaystyle "+tex) +
+             "</div>";
+  });
+  // ====================================================================================================
 });
