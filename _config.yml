@@ -203,6 +203,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-admin
+  - jekyll-mermaid
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -213,6 +214,7 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-admin
+  - jekyll-mermaid
 
 # Archives
 #  Type
@@ -242,6 +244,8 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
+mermaid:
+  src: '//unpkg.com/mermaid@7.1.0/dist/mermaid.js'
 
 # HTML Compression
 # - http://jch.penibelst.de/
