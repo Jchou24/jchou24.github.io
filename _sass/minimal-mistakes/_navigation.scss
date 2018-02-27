@@ -478,9 +478,9 @@
   margin: 0.5rem 0;
   padding: 0.5rem 0;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   font-weight: bold;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   border-bottom: 1px solid $border-color;
 }
 
@@ -491,7 +491,7 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   letter-spacing: 1px;
   background-color: $background-color;
   border: 1px solid $border-color;
@@ -500,7 +500,7 @@
 
   .nav__title {
     color: #fff;
-    font-size: $type-size-6;
+    font-size: 0.85em;
     background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
@@ -512,15 +512,15 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
 
   a {
     display: block;
     padding: 0.5rem 1rem;
     color: $muted-text-color;
-    font-size: $type-size-7;
+    font-size: $type-size-6;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1.4;
     border-bottom: 1px solid $border-color;
 
     &:hover {
