@@ -203,7 +203,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-admin
-  - jekyll-mermaid
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -214,7 +213,6 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-admin
-  - jekyll-mermaid
 
 # Archives
 #  Type
