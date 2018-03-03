@@ -59,3 +59,10 @@
     width: 100%;
   }
 }
+
+div.sidebar_recent_posts{
+  display: none;
+  @include breakpoint($large) {
+    display: block;
+  }
+}

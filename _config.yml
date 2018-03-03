@@ -246,9 +246,6 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-mermaid:
-  src: '//unpkg.com/mermaid@7.1.0/dist/mermaid.js'
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
@@ -275,5 +272,6 @@ defaults:
       related: true
       toc: true
       sidebar:
-        nav: "main"
+        # nav: "main"
         image: ""
+        display_sidebar_recent_posts: true

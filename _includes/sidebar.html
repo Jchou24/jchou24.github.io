@@ -17,7 +17,11 @@
     {% endfor %}
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+    {% endif %} 
+
+    {%- comment -%}
+      Handle TOC
+    {%- endcomment -%}
     {% if page.toc %}
       {% assign nodes_count = page.content | split: '<h' %}
       {% if nodes_count.size > 1 %}
@@ -29,6 +33,21 @@
         </aside>
       {% endif %}
     {% endif %}
+
+    {%- comment -%}
+      Handle Recent Posts
+    {%- endcomment -%}
+    {% if site.posts.size > 0 and page.sidebar.display_sidebar_recent_posts %}
+      <div class="sidebar_recent_posts">
+        <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+        {% for post in site.posts limit:5 %}  
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p class="archive__item-excerpt page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> </strong> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
+          <hr>
+        {% endfor %}  
+      </div>
+    {% endif %}  
+
   {% endif %}
   </div>
 {% endif %}
