@@ -118,7 +118,7 @@ tags:
 
   * ## Customization
 
-    客製化內容獨立出來[在此]({% post_url 2018-02-25-develop-jekyll-blog-customization %})
+    客製化內容獨立出來[在此]({% post_url 2018-03-04-develop-jekyll-blog-customization %})
 
 # Deploy
 
