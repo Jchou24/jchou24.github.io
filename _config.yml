@@ -63,7 +63,7 @@ algolia:
   powered_by             : # true (default), false
 
 # SEO Related
-google_site_verification :
+google_site_verification : google5e278630893e5b18.html
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -210,6 +210,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-admin
+  - jekyll-sitemap
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -217,6 +218,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-sitemap
 
 # Archives
 #  Type
