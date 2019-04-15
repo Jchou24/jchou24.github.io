@@ -2,6 +2,7 @@
     "name": "Vue Blog",
     "short_name": "VBlog",
     "start_url": ".",
+    "display": "standalone",
     "background_color": "#fff",
     "description": "A Vue Blog",
     "icons": [{
