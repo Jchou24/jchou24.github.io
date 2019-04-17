@@ -1,6 +1,6 @@
 {
-    "name": "Vue Blog",
-    "short_name": "VBlog",
+    "name": "Vue JC Blog",
+    "short_name": "VueJCBlog",
     "start_url": ".",
     "display": "fullscreen",
     "background_color": "#fff",
