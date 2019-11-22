@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[67],{1105:function(t,n,e){"use strict";e.r(n);var s=e(22),l=Object(s.a)({},function(){var t=this.$createElement,n=this._self._c||t;return n("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[n("p",[this._v("3對1&2\n3對2.5\n3對1&1.5\n3對3鏡像\n靠大劍，刀去變成上面3種狀況\n3對3")])])},[],!1,null,null,null);n.default=l.exports}}]);
